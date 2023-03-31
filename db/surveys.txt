@@ -1,0 +1,40 @@
+# surveys
+{
+    _id: '1',
+    title: 'Survey 1',
+    questions: [
+        {
+            _id: 1,
+            title: 'What is your name?',
+            type: 'input'
+            options: [],
+        },
+        {
+            _id: 3,
+            title: 'What is your favourite fruit?',
+            type: 'radio'
+            options: ['Yellow', 'Green', 'Other']
+        }
+    ]
+}
+
+# survey_answers
+
+{
+    _id: 1,
+    surveyId: 1,
+    answers: [
+        {
+            _id: 1,
+            questionId: 1,
+            value: "Rafsan"
+        },
+        {
+            _id: 1,
+            questionId: 2,
+            value: "Red"
+        },
+    ]
+}
+
+

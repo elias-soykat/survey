@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "c91e4901-a18a-4c3f-9f52-e4194b9cc501",
+		"name": "survey app",
+		"description": "**Survey app**",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17753606"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"elias60@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/users/register"
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": ""
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"elias60@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/users/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Answer",
+			"item": [
+				{
+					"name": "delete answer by answer id and survey id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjkxNWEwMmViNmU2MmIzMWM1ZGY0ZiIsImlhdCI6MTY2NzgzMTkxNCwiZXhwIjoxNjY3OTE4MzE0fQ.5-SxF7lzwfwwF2UMvBFCO9ijzPIQYWnMTx2hXFUuXiY"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"answers\": [\n        {\n            \"value\": \"dolorem\"\n        },\n        {\n            \"value\": \"explicabo\"\n        },\n        {\n            \"value\": \"odit\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys/636923616e732e9b3716ff3e/answers/636923766e732e9b3716ff4b"
+					},
+					"response": []
+				},
+				{
+					"name": "answer survey by survey id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjkxNWEwMmViNmU2MmIzMWM1ZGY0ZiIsImlhdCI6MTY2NzgzMTkxNCwiZXhwIjoxNjY3OTE4MzE0fQ.5-SxF7lzwfwwF2UMvBFCO9ijzPIQYWnMTx2hXFUuXiY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"answers\": [\n        {\n            \"value\": \"white\"\n        },\n        {\n            \"value\": \"yellow\"\n        },\n        {\n            \"value\": \"blue\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys/636923616e732e9b3716ff3e/answers"
+					},
+					"response": []
+				},
+				{
+					"name": "get answer by answer id and survey id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjkxNWEwMmViNmU2MmIzMWM1ZGY0ZiIsImlhdCI6MTY2NzgzMTkxNCwiZXhwIjoxNjY3OTE4MzE0fQ.5-SxF7lzwfwwF2UMvBFCO9ijzPIQYWnMTx2hXFUuXi"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"answers\": [\n        {\n            \"value\": \"dolorem\"\n        },\n        {\n            \"value\": \"explicabo\"\n        },\n        {\n            \"value\": \"odit\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys/636923616e732e9b3716ff3e/answers/636923766e732e9b3716ff4b"
+					},
+					"response": []
+				},
+				{
+					"name": "get answer list by survey id (dashboard/chart purpose)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"answers\": [\n        {\n            \"value\": \"dolorem\"\n        },\n        {\n            \"value\": \"explicabo\"\n        },\n        {\n            \"value\": \"odit\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys/636915d72eb6e62b31c5df53/answers"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Survey",
+			"item": [
+				{
+					"name": "create a survey",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjkxNWEwMmViNmU2MmIzMWM1ZGY0ZiIsImlhdCI6MTY2NzgzMTkxNCwiZXhwIjoxNjY3OTE4MzE0fQ.5-SxF7lzwfwwF2UMvBFCO9ijzPIQYWnMTx2hXFUuXiY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"et consequuntur laudantium et culpa dolorem qui ut ea abxx\",\n    \"questions\": [\n        {\n            \"question\": \"doloribus ex nihil voluptatem eum\",\n            \"options\": [\n                \"white\",\n                \"non\",\n                \"ea\"\n            ]\n        },\n        {\n            \"question\": \"quia natus perferendis qui dolor\",\n            \"options\": [\n                \"yellow\",\n                \"explicabo\",\n                \"non\"\n            ]\n        },\n        {\n            \"question\": \"quia quia modi exercitationem maxime\",\n            \"options\": [\n                \"blue\",\n                \"asperiores\",\n                \"repudiandae\"\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys"
+					},
+					"response": []
+				},
+				{
+					"name": "get surveys list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjkxNWEwMmViNmU2MmIzMWM1ZGY0ZiIsImlhdCI6MTY2NzgzMTkxNCwiZXhwIjoxNjY3OTE4MzE0fQ.5-SxF7lzwfwwF2UMvBFCO9ijzPIQYWnMTx2hXFUuXiY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"et consequuntur laudantium et culpa dolorem qui ut ea ab\",\n    \"questions\": [\n        {\n            \"question\": \"doloribus ex nihil voluptatem eum\",\n            \"options\": [\n                \"dolorem\",\n                \"non\",\n                \"ea\"\n            ]\n        },\n        {\n            \"question\": \"quia natus perferendis qui dolor\",\n            \"options\": [\n                \"rerum\",\n                \"explicabo\",\n                \"non\"\n            ]\n        },\n        {\n            \"question\": \"quia quia modi exercitationem maxime\",\n            \"options\": [\n                \"odit\",\n                \"asperiores\",\n                \"repudiandae\"\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys"
+					},
+					"response": []
+				},
+				{
+					"name": "get a survey by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjkxNWEwMmViNmU2MmIzMWM1ZGY0ZiIsImlhdCI6MTY2NzgzMTkxNCwiZXhwIjoxNjY3OTE4MzE0fQ.5-SxF7lzwfwwF2UMvBFCO9ijzPIQYWnMTx2hXFUuXiY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"et consequuntur laudantium et culpa dolorem qui ut ea ab\",\n    \"questions\": [\n        {\n            \"question\": \"doloribus ex nihil voluptatem eum\",\n            \"options\": [\n                \"dolorem\",\n                \"non\",\n                \"ea\"\n            ]\n        },\n        {\n            \"question\": \"quia natus perferendis qui dolor\",\n            \"options\": [\n                \"rerum\",\n                \"explicabo\",\n                \"non\"\n            ]\n        },\n        {\n            \"question\": \"quia quia modi exercitationem maxime\",\n            \"options\": [\n                \"odit\",\n                \"asperiores\",\n                \"repudiandae\"\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys/636915d72eb6e62b31c5df53"
+					},
+					"response": []
+				},
+				{
+					"name": "delete a survey by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjkwM2MyMmQzYjU2Yzc0YTMwNDRhYiIsImlhdCI6MTY2NzgzMTU2MCwiZXhwIjoxNjY3OTE3OTYwfQ.mMpoWFIfKK2-YyESKTDLSU-VZsAk_frbUts1OPoSuG0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"et consequuntur laudantium et culpa dolorem qui ut ea ab\",\n    \"questions\": [\n        {\n            \"question\": \"doloribus ex nihil voluptatem eum\",\n            \"options\": [\n                \"dolorem\",\n                \"non\",\n                \"ea\"\n            ]\n        },\n        {\n            \"question\": \"quia natus perferendis qui dolor\",\n            \"options\": [\n                \"rerum\",\n                \"explicabo\",\n                \"non\"\n            ]\n        },\n        {\n            \"question\": \"quia quia modi exercitationem maxime\",\n            \"options\": [\n                \"odit\",\n                \"asperiores\",\n                \"repudiandae\"\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}:{{port}}/api/v1/surveys/636918160c33696aff09f42b"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost"
+		},
+		{
+			"key": "port",
+			"value": "5000"
+		}
+	]
+}

@@ -1,0 +1,99 @@
+{
+  "surveys": [
+    {
+      "id": "DujB9VNtL0WSFeoQApAtt",
+      "title": "quis occaecati et eos laborum deleniti accusantium laboriosam error minus",
+      "questions": [
+        {
+          "question": "dicta et illum voluptatem quaerat",
+          "options": ["nesciunt", "delectus", "vitae"],
+          "id": "N44MFK6c-WfAdT5Prv1EX"
+        },
+        {
+          "question": "impedit qui et dolorem maiores",
+          "options": ["voluptas", "ad", "rem"],
+          "id": "OoDnWrvyTzxu6Ia3dpC-G"
+        },
+        {
+          "question": "enim officiis laborum omnis dolore",
+          "options": ["consequatur", "ea", "est"],
+          "id": "8a9G0RzP54hmcoY07_wzG"
+        }
+      ]
+    }
+  ],
+  "submit": [
+    {
+      "id": "3bDUMEDCOxMvvlsncQVxT",
+      "surveyId": "ATvpDzBnfXc41nM6rTWDf",
+      "answers": [
+        {
+          "value": "modi",
+          "questionId": "e0cv-UxE00NXfriSaK_oz"
+        },
+        {
+          "value": "eaque",
+          "questionId": "NIRrXR7xT8rHnhZ1N8TC0"
+        },
+        {
+          "value": "quo",
+          "questionId": "EQm48WkntZeb1KKhJfaNb"
+        }
+      ]
+    },
+    {
+      "id": "6Rf0HjEQDjGegninxQ7og",
+      "surveyId": "DujB9VNtL0WSFeoQApAtt",
+      "answers": [
+        {
+          "value": "white",
+          "questionId": "N44MFK6c-WfAdT5Prv1EX"
+        },
+        {
+          "value": "yellow",
+          "questionId": "OoDnWrvyTzxu6Ia3dpC-G"
+        },
+        {
+          "value": "blue",
+          "questionId": "8a9G0RzP54hmcoY07_wzG"
+        }
+      ]
+    },
+    {
+      "id": "kAfGEdxsQfTNUIpdVQdb7",
+      "surveyId": "DujB9VNtL0WSFeoQApAtt",
+      "answers": [
+        {
+          "value": "white",
+          "questionId": "N44MFK6c-WfAdT5Prv1EX"
+        },
+        {
+          "value": "yellow",
+          "questionId": "OoDnWrvyTzxu6Ia3dpC-G"
+        },
+        {
+          "value": "blue",
+          "questionId": "8a9G0RzP54hmcoY07_wzG"
+        }
+      ]
+    },
+    {
+      "id": "SpG2XNp4o51gmnLoT--tz",
+      "surveyId": "DujB9VNtL0WSFeoQApAtt",
+      "answers": [
+        {
+          "value": "white",
+          "questionId": "N44MFK6c-WfAdT5Prv1EX"
+        },
+        {
+          "value": "yellow",
+          "questionId": "OoDnWrvyTzxu6Ia3dpC-G"
+        },
+        {
+          "value": "blue",
+          "questionId": "8a9G0RzP54hmcoY07_wzG"
+        }
+      ]
+    }
+  ]
+}
